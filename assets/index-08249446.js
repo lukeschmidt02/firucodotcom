@@ -63,7 +63,7 @@ Error generating stack: `+i.message+`
   border-radius: 20px;
   overflow: scroll;
   border: 1px solid lightgray;
-`,ww=()=>z.jsxs($w,{children:[z.jsx(Gi,{primary:"First Blog Post for HunTaGo",secondary:"7/11/2023",url:"https://medium.com/@lukeschmidt02",children:"This is my first post to my blog. I am thriled to be sharing my development process as an aspiring app developer with the world!"}),z.jsx(Gi,{primary:"First Blog Post for HunTaGo",secondary:"7/11/2023",url:"https://medium.com/@lukeschmidt02",children:"This is my first post to my blog. I am thriled to be sharing my development process as an aspiring app developer with the world!"}),z.jsx(vw,{})]});Gi.propTypes={children:Se.oneOfType([Se.string,Se.element]),primary:Se.string,secondary:Se.string,url:Se.string};const xw=Cr.div`
+`,ww=()=>z.jsxs($w,{children:[z.jsx(Gi,{primary:"First Blog Post for HunTaGo",secondary:"7/11/2023",url:"https://medium.com/@lukeschmidt02/first-blog-post-for-huntago-50614cc10a93",children:"This is my first post to my blog. I am thriled to be sharing my development process as an aspiring app developer with the world!"}),z.jsx(Gi,{primary:"First Blog Post for HunTaGo",secondary:"7/11/2023",url:"https://medium.com/@lukeschmidt02/first-blog-post-for-huntago-50614cc10a93",children:"This is my first post to my blog. I am thriled to be sharing my development process as an aspiring app developer with the world!"}),z.jsx(vw,{})]});Gi.propTypes={children:Se.oneOfType([Se.string,Se.element]),primary:Se.string,secondary:Se.string,url:Se.string};const xw=Cr.div`
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -75,6 +75,8 @@ Error generating stack: `+i.message+`
 `,Sw=Cr.img`
   width: 100%;
   height: 100%;
+
+  max-width: 60vw;
 `,bw=Cr.div`
   display: flex;
   flex-direction: row;
