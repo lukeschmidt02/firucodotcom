@@ -21,7 +21,7 @@ export const CardScrollBox = () => {
       <CardComponent
         primary="First Blog Post for HunTaGo"
         secondary="7/11/2023"
-        url="https://medium.com/@lukeschmidt02"
+        url="https://medium.com/@lukeschmidt02/first-blog-post-for-huntago-50614cc10a93"
       >
         This is my first post to my blog. I am thriled to be sharing my
         development process as an aspiring app developer with the world!
@@ -29,7 +29,7 @@ export const CardScrollBox = () => {
       <CardComponent
         primary="First Blog Post for HunTaGo"
         secondary="7/11/2023"
-        url="https://medium.com/@lukeschmidt02"
+        url="https://medium.com/@lukeschmidt02/first-blog-post-for-huntago-50614cc10a93"
       >
         This is my first post to my blog. I am thriled to be sharing my
         development process as an aspiring app developer with the world!
