@@ -15,7 +15,6 @@ export const CardComponent = ({ children, primary, secondary, url }) => {
   return (
     <div
       style={{
-        overflowY: "scroll",
         maxHeight: "400px",
         minHeight: "320px",
         width: "100%",
