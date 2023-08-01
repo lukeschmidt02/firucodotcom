@@ -19,6 +19,16 @@ export const CardScrollBox = () => {
   return (
     <ScrollBoxStyler>
       <CardComponent
+        primary="Big Developments and Course Correcting"
+        secondary="8/01/2023"
+        url="https://medium.com/@lukeschmidt02/big-developments-and-course-correcting-2937ef65c129"
+      >
+        Greetings, everyone! It’s been a little while since I’ve provided an
+        update on my latest project, the Huntago app. There’s been a lot of code
+        crunching, head-scratching, and “Eureka!” moments, and today, I’m
+        thrilled to share with ...
+      </CardComponent>
+      <CardComponent
         primary="HunTaGo in its first couple days"
         secondary="7/14/2023"
         url="https://medium.com/@lukeschmidt02/huntago-in-its-first-couple-days-3c44abee50ac"
