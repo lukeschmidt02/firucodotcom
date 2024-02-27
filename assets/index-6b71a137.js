@@ -121,7 +121,7 @@ Error generating stack: `+i.message+`
   padding: 20px;
   background-color: rgb(101, 88, 138);
 `,Gx=vt.iframe`
-  width: 80%;
+  width: 100%;
   flex-grow: 1;
   border: 0;
 `,Qx=vt.h1`
