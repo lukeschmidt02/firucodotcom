@@ -18,8 +18,11 @@ const DesktopPageStyler = styled.div`
 
 const StyledIframe = styled.iframe`
   width: 100%;
+  height: auto;
+  min-height: 500px;
   flex-grow: 1;
   border: 0;
+  overflow-y: auto;
 `;
 
 const ResponsiveHeader = styled.h1`
