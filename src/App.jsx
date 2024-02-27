@@ -1,5 +1,4 @@
-// Import necessary components from react-router-dom v6
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { MobilePage } from "./sections/main/mobile";
 import { HuntagoLegal } from "./sections/main/HuntagoLegal"; // Ensure this component is created
