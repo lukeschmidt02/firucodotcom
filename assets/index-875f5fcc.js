@@ -122,8 +122,11 @@ Error generating stack: `+i.message+`
   background-color: rgb(101, 88, 138);
 `,Gx=vt.iframe`
   width: 100%;
+  height: auto;
+  min-height: 500px;
   flex-grow: 1;
   border: 0;
+  overflow-y: auto;
 `,Qx=vt.h1`
   color: white;
   text-align: center;
