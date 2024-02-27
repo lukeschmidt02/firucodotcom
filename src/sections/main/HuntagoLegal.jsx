@@ -17,7 +17,7 @@ const DesktopPageStyler = styled.div`
 `;
 
 const StyledIframe = styled.iframe`
-  width: 80%;
+  width: 100%;
   flex-grow: 1;
   border: 0;
 `;
