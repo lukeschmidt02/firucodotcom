@@ -23,80 +23,59 @@ const StyledIframe = styled.iframe`
   flex-grow: 1;
   border: 0;
   overflow-y: auto;
+
+  @media (max-width: 768px) {
+    display: none; /* Hide iframe on mobile */
+  }
 `;
 
 const ResponsiveHeader = styled.h1`
   color: white;
   text-align: center;
-  font-size: 2rem; /* Default size */
+  font-size: 2rem;
 
   @media (max-width: 768px) {
-    font-size: 1.5rem; /* Smaller screens */
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    font-size: 1.75rem; /* Medium screens */
-  }
-
-  @media (min-width: 1025px) {
-    font-size: 2rem; /* Larger screens */
+    font-size: 1.5rem;
   }
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
-  gap: 10px; /* Adjust the gap between buttons as needed */
+  gap: 10px;
 `;
 
-export function HuntagoLegal() {
-  const [currentPDF, setCurrentPDF] = useState({
-    url: privacyPolicyHuntagoPDF,
-    selected: "privacyPolicy",
-  });
+function isMobileDevice() {
+  return window.innerWidth <= 768;
+}
 
-  const getButtonColor = (buttonName) => {
-    return currentPDF.selected === buttonName ? "secondary" : "primary";
+export function HuntagoLegal() {
+  const [currentPDF, setCurrentPDF] = useState(privacyPolicyHuntagoPDF);
+
+  const handleButtonClick = (pdfUrl) => {
+    if (isMobileDevice()) {
+      // Open the PDF directly for mobile devices
+      window.open(pdfUrl, "_blank");
+    } else {
+      // Update the iframe source for non-mobile devices
+      setCurrentPDF(pdfUrl);
+    }
   };
 
   return (
     <DesktopPageStyler>
       <ResponsiveHeader>Huntago Legal</ResponsiveHeader>
       <ButtonContainer>
-        <Button
-          auto
-          color={getButtonColor("privacyPolicy")}
-          onClick={() =>
-            setCurrentPDF({
-              url: privacyPolicyHuntagoPDF,
-              selected: "privacyPolicy",
-            })
-          }
-        >
+        <Button auto onClick={() => handleButtonClick(privacyPolicyHuntagoPDF)}>
           Privacy Policy
         </Button>
-        <Button
-          auto
-          color={getButtonColor("terms")}
-          onClick={() =>
-            setCurrentPDF({ url: termsHuntagoPDF, selected: "terms" })
-          }
-        >
+        <Button auto onClick={() => handleButtonClick(termsHuntagoPDF)}>
           Terms and Conditions
         </Button>
-        <Button
-          auto
-          color={getButtonColor("eula")}
-          onClick={() =>
-            setCurrentPDF({ url: eulaHuntagoPDF, selected: "eula" })
-          }
-        >
+        <Button auto onClick={() => handleButtonClick(eulaHuntagoPDF)}>
           EULA
         </Button>
       </ButtonContainer>
-      <StyledIframe src={currentPDF.url} title="Huntago Legal Documents">
-        This browser does not support PDFs. Please download the PDF to view it:
-        <a href={currentPDF.url}>Download PDF</a>.
-      </StyledIframe>
+      <StyledIframe src={currentPDF} title="Huntago Legal Documents" />
     </DesktopPageStyler>
   );
 }
