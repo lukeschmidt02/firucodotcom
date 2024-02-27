@@ -19,6 +19,16 @@ export const CardScrollBox = () => {
   return (
     <ScrollBoxStyler>
       <CardComponent
+        primary="Much Progress Made for a New Chapter in Social Tagging"
+        secondary="2/27/2024"
+        url="https://medium.com/@lukeschmidt02/much-progress-made-for-a-new-chapter-in-social-tagging-92a981eaa73d"
+      >
+        Hello everyone, It’s been quite a journey since the last update back in
+        August, and today, I’m thrilled to share the incredible strides I’ve
+        made with Huntago. As I transition from the drawing board to the vibrant
+        screens of your devices, ...
+      </CardComponent>
+      <CardComponent
         primary="Big Developments and Course Correcting"
         secondary="8/01/2023"
         url="https://medium.com/@lukeschmidt02/big-developments-and-course-correcting-2937ef65c129"

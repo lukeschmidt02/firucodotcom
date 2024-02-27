@@ -34,7 +34,7 @@ export const CardComponent = ({ children, primary, secondary, url }) => {
         <Card.Header>
           <img
             alt="huntago"
-            src="https://i.ibb.co/CBkQvxz/huntago.png"
+            src="https://i.ibb.co/gjG8bQp/H-Logo.png"
             width="50px"
             height="50px"
           />
