@@ -19,6 +19,16 @@ export const CardScrollBox = () => {
   return (
     <ScrollBoxStyler>
       <CardComponent
+        primary="Huntago Update: Closing in on Beta Release"
+        secondary="3/24/2024"
+        url="https://medium.com/@lukeschmidt02/hey-everyone-28074ec61804"
+      >
+        Hey everyone, It’s been a busy month for Huntago, and I’m excited to
+        share the latest updates as we edge closer to our beta release. I
+        appreciate your patience — it’s been a bit since my last post, but I
+        promise the developments ...
+      </CardComponent>
+      <CardComponent
         primary="Much Progress Made for a New Chapter in Social Tagging"
         secondary="2/27/2024"
         url="https://medium.com/@lukeschmidt02/much-progress-made-for-a-new-chapter-in-social-tagging-92a981eaa73d"
@@ -57,14 +67,6 @@ export const CardScrollBox = () => {
         true passion for app development. Eager to explore new horizons and
         cater to a different audience, I am now embarking on an exciting venture
         with my next app. While ...
-      </CardComponent>
-      <CardComponent
-        primary="First Blog Post for HunTaGo"
-        secondary="7/11/2023"
-        url="https://medium.com/@lukeschmidt02/first-blog-post-for-huntago-50614cc10a93"
-      >
-        This is my first post to my blog. I am thriled to be sharing my
-        development process as an aspiring app developer with the world!
       </CardComponent>
       <CheckFullBlog />
     </ScrollBoxStyler>
