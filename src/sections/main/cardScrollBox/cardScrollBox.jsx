@@ -19,6 +19,17 @@ export const CardScrollBox = () => {
   return (
     <ScrollBoxStyler>
       <CardComponent
+        primary="Beta Release Success"
+        secondary="4/11/2024"
+        url="https://medium.com/@lukeschmidt02/beta-release-success-5aa5214fce7f"
+      >
+        Yesterday was a landmark day in the journey of Huntago, and I’m eager to
+        share the highlights and successes with all of you. With the invaluable
+        support of Dr. Urquhart from the UNC SILS department, Huntago was
+        introduced not just as a concept, but as a living, evolving app during a
+        packed lecture at the ...
+      </CardComponent>
+      <CardComponent
         primary="Huntago Update: Closing in on Beta Release"
         secondary="3/24/2024"
         url="https://medium.com/@lukeschmidt02/hey-everyone-28074ec61804"
@@ -57,16 +68,6 @@ export const CardScrollBox = () => {
         building HunTaGo in React Native. I took a long course on Udemy
         understanding React and React Native because before taking the class I
         was very unfamiliar with ...
-      </CardComponent>
-      <CardComponent
-        primary="HunTaGo at its Essential"
-        secondary="7/14/2023"
-        url="https://medium.com/@lukeschmidt02/huntago-at-its-essential-f54f49c51675"
-      >
-        From building and successfully launching Dino Glide, I discovered my
-        true passion for app development. Eager to explore new horizons and
-        cater to a different audience, I am now embarking on an exciting venture
-        with my next app. While ...
       </CardComponent>
       <CheckFullBlog />
     </ScrollBoxStyler>
